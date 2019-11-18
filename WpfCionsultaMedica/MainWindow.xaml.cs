@@ -20,11 +20,11 @@ namespace WpfCionsultaMedica
     /// </summary>
     public partial class MainWindow : Window
     {
-        ConsultaMedicaEntities datos;
+        ConsultaMedicaEntities1 datos;
         public MainWindow()
         {
             InitializeComponent();
-            datos = new ConsultaMedicaEntities();
+            datos = new ConsultaMedicaEntities1();
         }
 
         private void CargarDatosGrilla()

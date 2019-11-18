@@ -13,10 +13,10 @@ namespace WpfCionsultaMedica
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ConsultaMedicaEntities : DbContext
+    public partial class ConsultaMedicaEntities1 : DbContext
     {
-        public ConsultaMedicaEntities()
-            : base("name=ConsultaMedicaEntities")
+        public ConsultaMedicaEntities1()
+            : base("name=ConsultaMedicaEntities1")
         {
         }
     
@@ -25,11 +25,6 @@ namespace WpfCionsultaMedica
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
-        public virtual DbSet<AspNetRoles> AspNetRoles { get; set; }
-        public virtual DbSet<AspNetUserClaims> AspNetUserClaims { get; set; }
-        public virtual DbSet<AspNetUserLogins> AspNetUserLogins { get; set; }
-        public virtual DbSet<AspNetUsers> AspNetUsers { get; set; }
         public virtual DbSet<Cita> Cita { get; set; }
         public virtual DbSet<Ciudad> Ciudad { get; set; }
         public virtual DbSet<Clinica> Clinica { get; set; }
@@ -41,6 +36,5 @@ namespace WpfCionsultaMedica
         public virtual DbSet<Reserva> Reserva { get; set; }
         public virtual DbSet<Turno> Turno { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
-        public virtual DbSet<Vacacion> Vacacion { get; set; }
     }
 }

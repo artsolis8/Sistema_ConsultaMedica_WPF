@@ -17,7 +17,5 @@ namespace WpfCionsultaMedica
         public int id { get; set; }
         public string descripcion { get; set; }
         public Nullable<int> clinica { get; set; }
-    
-        public virtual Clinica Clinica1 { get; set; }
     }
 }
